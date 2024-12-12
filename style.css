@@ -1,4 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryColor: #727161;
+    --hoverBtnColor: #FFC456;
+    --secondaryColor: #F4EEEB;
+
+}
+
 body{
     background-color: #212121;
     color: #fff;
+}
+button ,input{
+    border: none;
+    outline: none;
+}
+.container{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+
+}
+.myApp{
+    width: 40%;
+    padding: 30px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+
+}
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.addMessageBtn{
+    width: 20%;
+    padding: 15px 10px;
+    flex: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.addMessageBtn:hover{
+    background-color: var(--hoverBtnColor);
+
+}
+input{
+    padding: 15px 10px;
+    width: 80%;
+    flex: 4;
+    border-radius: 5px;
+}
+.myTable{
+    margin-top: 15px;
+    width: 100%;
+}
+tr td{
+    background-color: var(--secondaryColor);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #212121;
+
+    border-radius: 5px;
+}
+
+.checker{
+   display: flex;
+   align-items: center;
+}
+
+.editBtn, .deleteBtn{
+    width: 80px;
+    cursor: pointer;
+    padding: 4px;
+    transition: 0.3s;
+    border-radius: 5px;
+background-color: var(--primaryColor);
+color: white;
+}
+.editBtn:hover, .deleteBtn:hover{
+    background-color: var(--hoverBtnColor);
+    color: #212121;
+}
+
+.checkBox{
+    margin-right: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
 }
