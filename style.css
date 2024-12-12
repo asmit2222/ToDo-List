@@ -70,10 +70,9 @@ tr td{
     display: flex;
     justify-content: space-between;
     color: #212121;
-    border-radius: 5px;   
+    border-radius: 5px;  
+    overflow-wrap: anywhere;
 }
-
-
 
 .checker{
    display: flex;
