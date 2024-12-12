@@ -9,20 +9,23 @@
   <body>
     <div class="container">
       <div class="myApp">
-        <form action="">
+        <form action="" class="formSubmitter">
           <div class="actions">
+            <!-- input field hidden for updting the data -->
+            <input type="text" hidden class="idStorer" />
+
             <input
               type="text"
               name=""
               placeholder="Add your task"
-              class="addMessage"
+              class="messageAdder"
             />
             <button type="submit" class="addMessageBtn">Add Task</button>
           </div>
         </form>
         <div class="myTasks">
           <table class="myTable">
-            <tr>
+            <!-- <tr>
               <td>
                 <div class="checker">
                   <span><input type="checkbox" class="checkBox" /></span>This is
@@ -33,7 +36,7 @@
                   <button class="deleteBtn">Delete</button>
                 </div>
               </td>
-            </tr>
+            </tr> -->
           </table>
         </div>
       </div>
